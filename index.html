@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Circular Menu</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+    <body background="../circular-menu (1)/img/fondo.jpg">
+
+  <div class='selector'> 
+  <ul>
+    <li>
+      <input id='1' type='checkbox'>
+      <label for='1'>  Venta</label>
+    </li>
+    <li>
+      <input id='2' type='checkbox'>
+      <label for='2'>Cobro</label>
+    </li>
+    <li>
+      <input id='3' type='checkbox'>
+      <label for='3'>Informar</label>
+    </li>
+    <li>
+      <input id='4' type='checkbox'>
+      <label for='4'>Consultas</label>
+    </li>
+    <li>
+      <input id='5' type='checkbox'>
+      <label for='5'>Solicitud</label>
+    </li>
+    <li>
+      <input id='6' type='checkbox'>
+      <label for='6'>Emergencias</label>
+    </li>
+    <li>
+      <input id='7' type='checkbox'>
+      <label for='7'>Ayuda</label>
+    </li>
+    <li>
+      <input id='8' type='checkbox'>
+      <label for='8'>Entretener</label>
+    </li>
+  </ul>
+  <div id="logo">
+    <img src=" ../circular-menu (1)/img/logo.jpeg " alt="" id="logo">
+  
+     
+  </div>
+ 
+
+</div>
+
+<div class='selector1' style="display:none">
+    <ul>
+      <li>
+        <input id='10' type='checkbox'>
+        <label for='10'>SMS</label>
+      </li>
+      <li>
+        <input id='11 ' type='checkbox'>
+        <label for='11'>CAMPAÑA ENTRANTE</label>
+      </li>
+      <li>
+        <input id='12' type='checkbox'>
+        <label for='12'>BLASTER </label>
+      </li>
+
+      <li>
+          <input id='12' type='checkbox'>
+          <label for='12'>CALL CENTER </label>
+        </li>
+      
+    </ul>
+    <button id="btn_Prueba">Venta</button>
+  
+  </div>
+
+
+
+
+
+  <script>
+
+
+      $(document).ready(function(){
+        $("#1").click(function(){
+    
+          $('.selector1').show()
+         
+    
+        });
+      });
+    
+    
+    </script>
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+
+
+</html>
