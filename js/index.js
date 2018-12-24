@@ -29,8 +29,15 @@ $('.selector button').click(function(e) {
 
 setTimeout(function() { toggleOptions('.selector'); }, 100);
 
+$('.selector1 button').click(function(e) {
+    toggleOptions($(this).parent());
+});
 
 setTimeout(function() { toggleOptions('.selector1'); }, 100);
+
+$('.cobro button').click(function(e) {
+    toggleOptions($(this).parent());
+});
 
 setTimeout(function() { toggleOptions('.cobro'); }, 100);
 setTimeout(function() { toggleOptions('.informar'); }, 100);
