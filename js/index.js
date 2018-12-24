@@ -31,3 +31,16 @@ setTimeout(function() { toggleOptions('.selector'); }, 100);
 
 
 setTimeout(function() { toggleOptions('.selector1'); }, 100);
+
+setTimeout(function() { toggleOptions('.cobro'); }, 100);
+setTimeout(function() { toggleOptions('.informar'); }, 100);
+
+setTimeout(function() { toggleOptions('.consultas'); }, 100);
+setTimeout(function() { toggleOptions('.solicitud'); }, 100);
+
+setTimeout(function() { toggleOptions('.emergencias'); }, 100);
+
+
+setTimeout(function() { toggleOptions('.ayuda'); }, 100);
+
+setTimeout(function() { toggleOptions('.entretener'); }, 100);
