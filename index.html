@@ -12,11 +12,63 @@
   
       <link rel="stylesheet" href="css/style.css">
 
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+
   
 </head>
 
 
     <body background="img/fondo.jpg">
+
+
+
+    <div class="container"  >
+
+        <div class="card text-white bg-primary mb-3" style="max-width: 18rem; display:none" id='pruebas'>
+            <div class="card-header">VENTAS</div>
+            <div class="card-body">
+             
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+
+
+          <div class="card text-white bg-info mb-3" style="max-width: 18rem; display:none" id='sms'>
+              <div class="card-header">SMS</div>
+              <div class="card-body">
+                <h5 class="card-title">Info card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+
+            <div class="card bg-light mb-3" style="max-width: 18rem; display:none" id='campania'>
+                <div class="card-header">CAMPAÑA</div>
+                <div class="card-body">
+                  
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+
+
+              <div class="card text-white bg-dark mb-3"  style="max-width: 18rem; display:none" id='blaster'>
+                  <div class="card-header">BLASTER</div>
+                  <div class="card-body">
+                    <h5 class="card-title">Dark card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+
+
+                <div class="card border-info mb-3" style="max-width: 18rem; display:none" id='callcenter'>
+                    <div class="card-header">CALLCENTER</div>
+                    <div class="card-body text-info">
+                      <h5 class="card-title">Info card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+         
+    </div>
 
   <div class='selector'> 
   <ul>
@@ -53,8 +105,8 @@
       <label for='8'>Entretener</label>
     </li>
   </ul>
-  <div id="logo">
-    <img src="img/logo.jpeg " alt="" id="logo">
+  <div >
+    <img src="img/logo.png " alt="" id="logo">
   
      
   </div>
@@ -333,7 +385,8 @@
   $(document).ready(function(){
         $("#1").click(function(){
     
-          $('.selector1').show(3000)
+          $('.selector1').show(100)
+          $('#pruebas').show(100)
           $('.selector').hide(3000)
          
     
@@ -419,6 +472,64 @@
     
         });
       });
+
+
+
+       $(document).ready(function(){
+        $("#9").click(function(){
+    
+          $('#sms').show(100)
+          $('#pruebas').hide(100)
+          $('#campania').hide(100)
+          $('#blaster').hide(100)
+          $('#callcenter').hide(100)
+         
+    
+        });
+      });
+
+
+          $(document).ready(function(){
+        $("#10").click(function(){
+    
+          $('#campania').show(100)
+          $('#pruebas').hide(100)
+          $('#sms').hide(100)
+          $('#callcenter').hide(100)
+          $('#blaster').hide(100)
+         
+    
+        });
+      });
+
+
+         $(document).ready(function(){
+        $("#11").click(function(){
+
+          $('#blaster').show(100)
+          $('#campania').hide(100)
+          $('#pruebas').hide(100)
+          $('#sms').hide(100)
+          $('#callcenter').hide(100)
+        
+         
+    
+        });
+      });
+
+         $(document).ready(function(){
+        $("#12").click(function(){
+          $('#callcenter').show(100)
+          $('#campania').hide(100)
+          $('#pruebas').hide(100)
+          $('#sms').hide(100)
+          
+          $('#blaster').hide(100)
+         
+    
+        });
+      });
+
 
     </script>
   
